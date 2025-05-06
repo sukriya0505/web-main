@@ -9,7 +9,7 @@ export function ProfileInfo() {
             <h3 className="text-lg font-medium mb-2">About</h3>
             <p className="text-gray-600">
               Professional photographer with over 10 years of experience specializing in portrait, landscape, and event
-              photography. I'm passionate about capturing moments that tell stories and evoke emotions.
+              photography. I&#39;m passionate about capturing moments that tell stories and evoke emotions.
             </p>
           </div>
 

@@ -19,7 +19,7 @@ export default function SignupStartPage() {
                 </div>
                 <div>
                   <h3 className="font-medium text-lg mb-2">Artist</h3>
-                  <p className="text-gray-600">Artists don't need to look for work—it finds them!</p>
+                  <p className="text-gray-600">Artists don&#39;t need to look for work—it finds them!</p>
                 </div>
               </div>
             </Card>

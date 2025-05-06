@@ -27,7 +27,7 @@ export const TopProfiles = () => {
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold mb-4">Top rated profiles</h2>
         <p className="text-gray-500 max-w-2xl mx-auto">
-          "Thank you for building such an empowering tool, especially for designers! The site went from Figma to Framer in less than a week."
+          &quot;Thank you for building such an empowering tool, especially for designers! The site went from Figma to Framer in less than a week.&quot;
         </p>
       </div>
 
