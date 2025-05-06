@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const HeroSection = () => {
   return (
@@ -15,10 +16,10 @@ export const HeroSection = () => {
           </p>
           <div className="flex gap-4 mt-8">
             <button className="px-6 py-3 bg-[#7C3AED] text-white rounded-lg hover:bg-[#6D28D9] transition-colors">
-              Sign up
+        <Link href="/signup-start">Sign Up</Link>
             </button>
             <button className="px-6 py-3 border border-gray-200 rounded-lg hover:border-[#7C3AED] transition-colors">
-              Log in
+            <Link href="/login-fill-email">Log In</Link>
             </button>
           </div>
         </div>
