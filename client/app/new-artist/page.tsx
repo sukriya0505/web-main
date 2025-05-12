@@ -1,13 +1,13 @@
-'use client'
-import { ArtistCard } from "@/components/artist-card"
-import { FilterSidebar } from "@/components/filter-sidebar"
-import { artists } from "@/data/artists"
-import { Button } from "@/components/ui/button"
-import { useState } from "react"
-import { Menu } from "lucide-react"
+"use client";
+import { ArtistCard } from "@/components/artist-card";
+import { FilterSidebar } from "@/components/filter-sidebar";
+import { artists } from "@/data/artists";
+import { Button } from "@/components/ui/button";
+import { useState } from "react";
+import { Menu } from "lucide-react";
 
 export default function NewArtistPage() {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false)
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
     <div className="flex flex-col lg:flex-row min-h-screen">
@@ -24,10 +24,12 @@ export default function NewArtistPage() {
       </div>
 
       {/* Sidebar */}
-      <div className={`
-        ${isSidebarOpen ? 'block' : 'hidden'} 
+      <div
+        className={`
+        ${isSidebarOpen ? "block" : "hidden"} 
         lg:block lg:w-64 border-r p-4 h-screen sticky top-0 overflow-y-auto
-      `}>
+      `}
+      >
         <FilterSidebar />
       </div>
 
@@ -40,5 +42,5 @@ export default function NewArtistPage() {
         </div>
       </div>
     </div>
-  )
+  );
 }

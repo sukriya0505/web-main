@@ -1,13 +1,13 @@
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
-import { Heart } from "lucide-react"
-import { StarRating } from "@/components/star-rating"
-import type { Artist } from "@/types/artist"
-import Link from "next/link"
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Heart } from "lucide-react";
+import { StarRating } from "@/components/star-rating";
+import type { Artist } from "@/types/artist";
+import Link from "next/link";
 
 interface ArtistCardProps {
-  artist: Artist
+  artist: Artist;
 }
 
 export function ArtistCard({ artist }: ArtistCardProps) {
@@ -42,7 +42,9 @@ export function ArtistCard({ artist }: ArtistCardProps) {
           </div>
         </div>
         <div className="flex items-center gap-2 mb-2">
-          <div className="bg-purple-100 text-purple-800 text-xs font-medium px-2 py-1 rounded">{artist.rating}</div>
+          <div className="bg-purple-100 text-purple-800 text-xs font-medium px-2 py-1 rounded">
+            {artist.rating}
+          </div>
           <StarRating rating={artist.rating} />
         </div>
         <p className="text-sm mb-4">
@@ -50,7 +52,9 @@ export function ArtistCard({ artist }: ArtistCardProps) {
         </p>
         <div className="grid grid-cols-2 gap-2 mt-auto">
           <Link href="/profile" className="w-full">
-            <Button className="bg-purple-500 hover:bg-purple-600 w-full">Follow</Button>
+            <Button className="bg-purple-500 hover:bg-purple-600 w-full">
+              Follow
+            </Button>
           </Link>
           <Button variant="outline" className="w-full">
             Learn more
@@ -58,5 +62,5 @@ export function ArtistCard({ artist }: ArtistCardProps) {
         </div>
       </div>
     </Card>
-  )
+  );
 }

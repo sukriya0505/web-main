@@ -1,41 +1,46 @@
-'use client'
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import Image from "next/image"
-import { Heart } from "lucide-react"
+"use client";
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import { Heart } from "lucide-react";
 
 export default function ProfilePage() {
-  const [activeTab, setActiveTab] = useState<"recent" | "best">("recent")
+  const [activeTab, setActiveTab] = useState<"recent" | "best">("recent");
 
   const workDetails = [
     {
-      image: "https://framerusercontent.com/images/c92CH1MP5YQcMLlMNxrry8Zx28k.jpg?scale-down-to=1024",
+      image:
+        "https://framerusercontent.com/images/c92CH1MP5YQcMLlMNxrry8Zx28k.jpg?scale-down-to=1024",
       title: "Ceramic Vase",
     },
     {
-      image: "https://framerusercontent.com/images/ayDqy4Ht9RkFYXKs91SmwGW7I.png?scale-down-to=512",
+      image:
+        "https://framerusercontent.com/images/ayDqy4Ht9RkFYXKs91SmwGW7I.png?scale-down-to=512",
       title: "Modern Sculpture",
     },
     {
-      image: "https://framerusercontent.com/images/rQRaaafo3wCP7kxVOIxm8eqwQ.png?scale-down-to=512",
+      image:
+        "https://framerusercontent.com/images/rQRaaafo3wCP7kxVOIxm8eqwQ.png?scale-down-to=512",
       title: "Artistic Plate",
     },
     // Add more items as needed
-  ]
+  ];
 
   const bestWorkDetails = [
     {
-      image: "https://framerusercontent.com/images/ardL1oqEQa80dnz8zTjxciJCcY.png?scale-down-to=1024",
+      image:
+        "https://framerusercontent.com/images/ardL1oqEQa80dnz8zTjxciJCcY.png?scale-down-to=1024",
       title: "Award-winning Vase",
     },
     {
-      image: "https://framerusercontent.com/images/GaMR6ylXJ0WdikU3FJgA4qlczcg.png?scale-down-to=1024",
+      image:
+        "https://framerusercontent.com/images/GaMR6ylXJ0WdikU3FJgA4qlczcg.png?scale-down-to=1024",
       title: "Signature Sculpture",
     },
     // Add more items as needed
-  ]
+  ];
 
-  const displayedWorks = activeTab === "recent" ? workDetails : bestWorkDetails
+  const displayedWorks = activeTab === "recent" ? workDetails : bestWorkDetails;
 
   return (
     <div className="container mx-auto py-8 px-4">
@@ -57,7 +62,8 @@ export default function ProfilePage() {
 
           <div className="flex gap-8 mb-6">
             <div>
-              <span className="text-purple-500 font-semibold">69</span> Connections
+              <span className="text-purple-500 font-semibold">69</span>{" "}
+              Connections
             </div>
             <div>
               <span className="text-purple-500 font-semibold">106</span> Clients
@@ -68,7 +74,9 @@ export default function ProfilePage() {
           </div>
 
           <div className="flex gap-3">
-            <Button className="bg-purple-500 hover:bg-purple-600 px-6">Follow</Button>
+            <Button className="bg-purple-500 hover:bg-purple-600 px-6">
+              Follow
+            </Button>
             <Button variant="outline" className="px-6">
               Chat
             </Button>
@@ -124,5 +132,5 @@ export default function ProfilePage() {
         ))}
       </div>
     </div>
-  )
+  );
 }

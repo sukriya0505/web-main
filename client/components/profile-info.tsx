@@ -1,4 +1,4 @@
-import { Card, CardContent } from "@/components/ui/card"
+import { Card, CardContent } from "@/components/ui/card";
 
 export function ProfileInfo() {
   return (
@@ -8,19 +8,31 @@ export function ProfileInfo() {
           <div>
             <h3 className="text-lg font-medium mb-2">About</h3>
             <p className="text-gray-600">
-              Professional photographer with over 10 years of experience specializing in portrait, landscape, and event
-              photography. I&#39;m passionate about capturing moments that tell stories and evoke emotions.
+              Professional photographer with over 10 years of experience
+              specializing in portrait, landscape, and event photography.
+              I&#39;m passionate about capturing moments that tell stories and
+              evoke emotions.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-medium mb-2">Specialties</h3>
             <div className="flex flex-wrap gap-2">
-              <span className="bg-gray-100 px-3 py-1 rounded-full text-sm">Portrait Photography</span>
-              <span className="bg-gray-100 px-3 py-1 rounded-full text-sm">Landscape</span>
-              <span className="bg-gray-100 px-3 py-1 rounded-full text-sm">Events</span>
-              <span className="bg-gray-100 px-3 py-1 rounded-full text-sm">Wedding</span>
-              <span className="bg-gray-100 px-3 py-1 rounded-full text-sm">Commercial</span>
+              <span className="bg-gray-100 px-3 py-1 rounded-full text-sm">
+                Portrait Photography
+              </span>
+              <span className="bg-gray-100 px-3 py-1 rounded-full text-sm">
+                Landscape
+              </span>
+              <span className="bg-gray-100 px-3 py-1 rounded-full text-sm">
+                Events
+              </span>
+              <span className="bg-gray-100 px-3 py-1 rounded-full text-sm">
+                Wedding
+              </span>
+              <span className="bg-gray-100 px-3 py-1 rounded-full text-sm">
+                Commercial
+              </span>
             </div>
           </div>
 
@@ -59,5 +71,5 @@ export function ProfileInfo() {
         </div>
       </CardContent>
     </Card>
-  )
+  );
 }

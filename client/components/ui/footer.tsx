@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export const Footer = () => {
   return (
@@ -10,8 +10,13 @@ export const Footer = () => {
             <span className="font-bold text-xl">SUKRIYA</span>
           </div>
           <div className="text-center">
-            <span className="text-lg font-medium">Discover artists on <span className="text-purple-500">SUKRIYA</span></span>
-            <div className="text-gray-500 text-sm">Explore 1,420,069 creative talents worldwide</div>
+            <span className="text-lg font-medium">
+              Discover artists on{" "}
+              <span className="text-purple-500">SUKRIYA</span>
+            </span>
+            <div className="text-gray-500 text-sm">
+              Explore 1,420,069 creative talents worldwide
+            </div>
           </div>
           <form className="flex w-full max-w-2xl mt-4">
             <input
@@ -27,9 +32,15 @@ export const Footer = () => {
             </button>
           </form>
           <div className="flex gap-8 mt-6 text-sm text-black">
-            <a href="#" className="hover:underline">Help Center</a>
-            <a href="#" className="hover:underline">Artist support</a>
-            <a href="#" className="hover:underline">Get in touch</a>
+            <a href="#" className="hover:underline">
+              Help Center
+            </a>
+            <a href="#" className="hover:underline">
+              Artist support
+            </a>
+            <a href="#" className="hover:underline">
+              Get in touch
+            </a>
           </div>
           {/* <div className="flex gap-4 mt-4">
             <a href="#"><Image src="/linkedin.svg" alt="LinkedIn" width={28} height={28} /></a>

@@ -1,6 +1,6 @@
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 export const HeroSection = () => {
   return (
@@ -8,8 +8,7 @@ export const HeroSection = () => {
       <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
         <div className="w-full lg:w-[500px] text-center lg:text-left">
           <h1 className="text-4xl md:text-5xl lg:text-[56px] leading-[1.1] font-semibold mb-4">
-            Discover artists on{' '}
-            <span className="text-[#7C3AED]">SUKRIYA</span>
+            Discover artists on <span className="text-[#7C3AED]">SUKRIYA</span>
           </h1>
           <p className="text-lg md:text-[20px] text-gray-500 mb-8">
             Explore 1,420,069 creative talents worldwide

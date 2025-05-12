@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 
 export function FilterSidebar() {
   return (
@@ -10,7 +10,11 @@ export function FilterSidebar() {
         <div className="space-y-6">
           <div className="space-y-2">
             <Label htmlFor="artist-type">Type of artist</Label>
-            <Input id="artist-type" placeholder="sound engineer" className="h-9" />
+            <Input
+              id="artist-type"
+              placeholder="sound engineer"
+              className="h-9"
+            />
           </div>
 
           <div className="space-y-2">
@@ -33,9 +37,11 @@ export function FilterSidebar() {
             <Input id="max-budget" placeholder="$ 2500" className="h-9" />
           </div>
 
-          <Button className="w-full bg-purple-500 hover:bg-purple-600">Apply Filters</Button>
+          <Button className="w-full bg-purple-500 hover:bg-purple-600">
+            Apply Filters
+          </Button>
         </div>
       </div>
     </div>
-  )
+  );
 }

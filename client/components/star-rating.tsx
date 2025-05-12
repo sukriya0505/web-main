@@ -1,20 +1,23 @@
-import { Star } from "lucide-react"
+import { Star } from "lucide-react";
 
 interface StarRatingProps {
-  rating: number
+  rating: number;
 }
 
 export function StarRating({ rating }: StarRatingProps) {
   // Normalize rating to be between 0 and 5
-  const normalizedRating = Math.min(5, Math.max(0, rating / 2))
-  const fullStars = Math.floor(normalizedRating)
-  const hasHalfStar = normalizedRating % 1 >= 0.5
-  const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0)
+  const normalizedRating = Math.min(5, Math.max(0, rating / 2));
+  const fullStars = Math.floor(normalizedRating);
+  const hasHalfStar = normalizedRating % 1 >= 0.5;
+  const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
 
   return (
     <div className="flex">
       {[...Array(fullStars)].map((_, i) => (
-        <Star key={`full-${i}`} className="h-4 w-4 fill-purple-500 text-purple-500" />
+        <Star
+          key={`full-${i}`}
+          className="h-4 w-4 fill-purple-500 text-purple-500"
+        />
       ))}
       {hasHalfStar && (
         <div className="relative">
@@ -28,5 +31,5 @@ export function StarRating({ rating }: StarRatingProps) {
         <Star key={`empty-${i}`} className="h-4 w-4 text-gray-300" />
       ))}
     </div>
-  )
+  );
 }

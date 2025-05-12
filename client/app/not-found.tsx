@@ -1,5 +1,5 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export default function NotFound() {
   return (
@@ -23,10 +23,14 @@ export default function NotFound() {
         </svg>
       </div>
       <h1 className="text-2xl font-bold mb-2">Page Not Found</h1>
-      <p className="text-gray-500 mb-6">The page you are looking for does not exist or may have been moved.</p>
+      <p className="text-gray-500 mb-6">
+        The page you are looking for does not exist or may have been moved.
+      </p>
       <Link href="/">
-        <Button className="bg-purple-500 hover:bg-purple-600">Back to Home</Button>
+        <Button className="bg-purple-500 hover:bg-purple-600">
+          Back to Home
+        </Button>
       </Link>
     </div>
-  )
+  );
 }

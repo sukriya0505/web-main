@@ -1,14 +1,25 @@
-import "dotenv/config";
-import express, { Application } from 'express';
-import router from "./routes/user.routes";
+import express from "express";
+import cors from "cors";
+import dotenv from "dotenv";
+import authRoutes from "./routes/authRoutes";
 
-const app: Application = express();
+dotenv.config();
 
-// middlewares
+const app = express();
+
+// Middleware
+app.use(cors());
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use("/", router);
 
-app.listen(process.env.PORT || 3001, () => {
-    console.log(`Server running on localhost:${process.env.PORT}`);
+// Routes
+app.use("/api/auth", authRoutes);
+
+const PORT = process.env.PORT || 5000;
+
+app.get("/", (req: express.Request, res: express.Response) => {
+  res.send("Hello World");
+});
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });

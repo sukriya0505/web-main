@@ -1,7 +1,7 @@
-import React from 'react';
-import Image from 'next/image';
-import profiles from '@/data/profiles.json';
-import { Profile } from '@/types/profile';
+import React from "react";
+import Image from "next/image";
+import profiles from "@/data/profiles.json";
+import { Profile } from "@/types/profile";
 
 const RatingStars = ({ rating }: { rating: number }) => {
   return (
@@ -9,7 +9,7 @@ const RatingStars = ({ rating }: { rating: number }) => {
       {[...Array(5)].map((_, i) => (
         <svg
           key={i}
-          className={`w-5 h-5 ${i < Math.floor(rating) ? 'text-yellow-400' : 'text-gray-200'}`}
+          className={`w-5 h-5 ${i < Math.floor(rating) ? "text-yellow-400" : "text-gray-200"}`}
           fill="currentColor"
           viewBox="0 0 20 20"
         >
@@ -27,13 +27,18 @@ export const TopProfiles = () => {
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold mb-4">Top rated profiles</h2>
         <p className="text-gray-500 max-w-2xl mx-auto">
-          &quot;Thank you for building such an empowering tool, especially for designers! The site went from Figma to Framer in less than a week.&quot;
+          &quot;Thank you for building such an empowering tool, especially for
+          designers! The site went from Figma to Framer in less than a
+          week.&quot;
         </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {profiles.profiles.map((profile: Profile) => (
-          <div key={profile.id} className="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+          <div
+            key={profile.id}
+            className="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow"
+          >
             <div className="relative aspect-[4/3] group">
               <Image
                 src={profile.image}
@@ -42,7 +47,13 @@ export const TopProfiles = () => {
                 className="object-cover"
               />
               <button className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-white hover:bg-white/90 transition-colors">
-                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <svg
+                  className="w-5 h-5"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
                   <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
                 </svg>
               </button>
@@ -60,7 +71,9 @@ export const TopProfiles = () => {
                 </div>
                 <div>
                   <h3 className="font-medium text-[15px]">{profile.name}</h3>
-                  <p className="text-[13px] text-gray-500">{profile.title}, {profile.location}</p>
+                  <p className="text-[13px] text-gray-500">
+                    {profile.title}, {profile.location}
+                  </p>
                 </div>
               </div>
 
@@ -68,7 +81,11 @@ export const TopProfiles = () => {
 
               <div className="mt-4 flex items-center justify-between">
                 <p className="text-[13px] text-gray-600">
-                  from <span className="text-[#7C3AED] font-medium">${profile.price}</span> {profile.priceUnit}
+                  from{" "}
+                  <span className="text-[#7C3AED] font-medium">
+                    ${profile.price}
+                  </span>{" "}
+                  {profile.priceUnit}
                 </p>
                 <div className="flex gap-2">
                   <button className="px-4 py-2 bg-[#7C3AED] text-white text-[13px] rounded hover:bg-[#6D28D9] transition-colors">

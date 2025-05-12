@@ -1,6 +1,6 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Card, CardContent } from "@/components/ui/card"
-import { StarRating } from "@/components/star-rating"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Card, CardContent } from "@/components/ui/card";
+import { StarRating } from "@/components/star-rating";
 
 export function ProfileReviews() {
   const reviews = [
@@ -31,7 +31,7 @@ export function ProfileReviews() {
       comment:
         "Worked with John for our company event. He was punctual, professional, and delivered the photos quickly. The quality was excellent!",
     },
-  ]
+  ];
 
   return (
     <div className="space-y-4">
@@ -40,7 +40,10 @@ export function ProfileReviews() {
           <CardContent className="p-6">
             <div className="flex items-start gap-4">
               <Avatar>
-                <AvatarImage src={review.avatar || "/placeholder.svg"} alt={review.name} />
+                <AvatarImage
+                  src={review.avatar || "/placeholder.svg"}
+                  alt={review.name}
+                />
                 <AvatarFallback>{review.name.charAt(0)}</AvatarFallback>
               </Avatar>
               <div className="flex-1">
@@ -58,5 +61,5 @@ export function ProfileReviews() {
         </Card>
       ))}
     </div>
-  )
+  );
 }

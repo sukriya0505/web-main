@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -18,14 +18,22 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-6">
-            <Link href="/" className="text-sm font-medium hover:text-purple-500 transition-colors">
+            <Link
+              href="/"
+              className="text-sm font-medium hover:text-purple-500 transition-colors"
+            >
               Home
             </Link>
-            <Link href="/new-artist" className="text-sm font-medium hover:text-purple-500 transition-colors">
+            <Link
+              href="/new-artist"
+              className="text-sm font-medium hover:text-purple-500 transition-colors"
+            >
               Artists
             </Link>
             <Link href="/signup-start">
-              <Button className="bg-purple-500 hover:bg-purple-600">Sign up</Button>
+              <Button className="bg-purple-500 hover:bg-purple-600">
+                Sign up
+              </Button>
             </Link>
             <Link href="/login-fill-email">
               <Button variant="outline" className="border-gray-300">
@@ -67,9 +75,14 @@ export default function Header() {
               </Link>
               <div className="flex flex-col gap-2 pt-2">
                 <Link href="/signup-start" onClick={() => setIsMenuOpen(false)}>
-                  <Button className="w-full bg-purple-500 hover:bg-purple-600">Sign up</Button>
+                  <Button className="w-full bg-purple-500 hover:bg-purple-600">
+                    Sign up
+                  </Button>
                 </Link>
-                <Link href="/login-fill-email" onClick={() => setIsMenuOpen(false)}>
+                <Link
+                  href="/login-fill-email"
+                  onClick={() => setIsMenuOpen(false)}
+                >
                   <Button variant="outline" className="w-full border-gray-300">
                     Log in
                   </Button>

@@ -1,4 +1,4 @@
-import type { Artist } from "@/types/artist"
+import type { Artist } from "@/types/artist";
 
 export const artists: Artist[] = [
   {
@@ -6,7 +6,8 @@ export const artists: Artist[] = [
     name: "Elara Whitmore",
     specialty: "Ceramic Artist",
     location: "North Carolina",
-    image: "https://framerusercontent.com/images/CiStsXkfIIiMSxKCgivjghzomE.png",
+    image:
+      "https://framerusercontent.com/images/CiStsXkfIIiMSxKCgivjghzomE.png",
     avatar: "https://framerusercontent.com/images/l1hfTr2axAdc064uf5xTECO0.png",
     rating: 9.8,
     price: 200,
@@ -17,7 +18,8 @@ export const artists: Artist[] = [
     name: "Ivy Callahan",
     specialty: "Portrait Photographer",
     location: "Texas",
-    image: "https://framerusercontent.com/images/CiStsXkfIIiMSxKCgivjghzomE.png",
+    image:
+      "https://framerusercontent.com/images/CiStsXkfIIiMSxKCgivjghzomE.png",
     avatar: "https://framerusercontent.com/images/l1hfTr2axAdc064uf5xTECO0.png",
     rating: 9.8,
     price: 500,
@@ -28,7 +30,8 @@ export const artists: Artist[] = [
     name: "Maya Ellington",
     specialty: "Content Writer",
     location: "Colorado",
-    image: "https://framerusercontent.com/images/cmklzmR18EIa9FVXS8TyGidsEU.png",
+    image:
+      "https://framerusercontent.com/images/cmklzmR18EIa9FVXS8TyGidsEU.png",
     avatar: "https://framerusercontent.com/images/l1hfTr2axAdc064uf5xTECO0.png",
     rating: 9.8,
     price: 0.15,
@@ -39,7 +42,8 @@ export const artists: Artist[] = [
     name: "Layla Henderson",
     specialty: "Social Media Manager",
     location: "Florida",
-    image: "https://framerusercontent.com/images/CiStsXkfIIiMSxKCgivjghzomE.png",
+    image:
+      "https://framerusercontent.com/images/CiStsXkfIIiMSxKCgivjghzomE.png",
     avatar: "https://framerusercontent.com/images/l1hfTr2axAdc064uf5xTECO0.png",
     rating: 9.8,
     price: 50,
@@ -50,7 +54,8 @@ export const artists: Artist[] = [
     name: "Sophia Langford",
     specialty: "Pet Portrait Artist",
     location: "California",
-    image: "https://framerusercontent.com/images/CiStsXkfIIiMSxKCgivjghzomE.png",
+    image:
+      "https://framerusercontent.com/images/CiStsXkfIIiMSxKCgivjghzomE.png",
     avatar: "https://framerusercontent.com/images/l1hfTr2axAdc064uf5xTECO0.png",
     rating: 9.8,
     price: 300,
@@ -61,10 +66,11 @@ export const artists: Artist[] = [
     name: "Violet Camden",
     specialty: "Guitar Instructor",
     location: "Illinois",
-    image: "https://framerusercontent.com/images/CiStsXkfIIiMSxKCgivjghzomE.png",
+    image:
+      "https://framerusercontent.com/images/CiStsXkfIIiMSxKCgivjghzomE.png",
     avatar: "https://framerusercontent.com/images/l1hfTr2axAdc064uf5xTECO0.png",
     rating: 9.8,
     price: 40,
     priceUnit: "lesson",
   },
-]
+];
